@@ -12,7 +12,7 @@ import org.scalatest.time.{Seconds, Span}
 import org.scalatestplus.scalacheck.ScalaCheckDrivenPropertyChecks
 import ru.otus.jdbc.dao.slick.UserDaoSlickImpl
 import ru.otus.jdbc.model.{Role, User}
-import slick.jdbc.JdbcBackend.Database
+import slick.jdbc.PostgresProfile.api.Database
 
 import java.util.UUID
 import scala.concurrent.ExecutionContext.Implicits.global

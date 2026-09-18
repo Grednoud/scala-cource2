@@ -1,9 +1,23 @@
-# Project exclude paths
-/project/target/
-/target/
-/target/scala-2.12/classes/
-/target/scala-2.12/test-classes/
+# sbt build artifacts
+target/
+project/target/
+project/project/
 
-/.vscode/*
-/.metals/*
-/project/*
+# IDE settings (do not commit)
+.idea/
+*.iml
+.bsp/
+.metals/
+.vscode/
+*.sublime-*
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Coursier/Ivy cache (local)
+.coursier/
+
+# Env files with secrets
+.env
+.envrc
