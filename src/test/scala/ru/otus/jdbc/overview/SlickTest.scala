@@ -1,7 +1,7 @@
 package ru.otus.jdbc.overview
 
 import slick.jdbc.PostgresProfile.api._
-import slick.jdbc.JdbcBackend.Database
+import slick.jdbc.PostgresProfile.api.Database
 
 import scala.concurrent.{Await, Future}
 import scala.concurrent.duration._

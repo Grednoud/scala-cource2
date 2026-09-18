@@ -2,21 +2,19 @@ name := "otus-scala-developer-homework"
 
 version := "0.1"
 
-scalaVersion := "2.13.4"
-
+scalaVersion := "2.13.18"
 
 libraryDependencies ++= Seq(
-    "org.postgresql"          % "postgresql"                            % "42.2.2"  % Test,
-    "org.scalatest"           %% "scalatest"                            % "3.2.3"   % Test,
-    "org.scalikejdbc"         %% "scalikejdbc"                          % "3.5.0"   % Test,
-    "org.scalikejdbc"         %% "scalikejdbc-test"                     % "3.5.0"   % Test,
-    "com.dimafeng"            %% "testcontainers-scala-postgresql"      % "0.38.7"  % Test,
-    "com.dimafeng"            %% "testcontainers-scala-scalatest"       % "0.38.7"  % Test,
-    "com.typesafe.slick"      %% "slick"                                % "3.3.3",
-    "org.flywaydb"            % "flyway-core"                         % "7.3.2",
-    "org.scalacheck"             %% "scalacheck"                % "1.14.3"                  % Test,
-    "org.scalatestplus"          %% "scalacheck-1-14"           % "3.2.0.0"           % Test,
-    "com.github.alexarchambault" %% "scalacheck-shapeless_1.14" % "1.2.3" % Test
-
-
+  "com.typesafe.slick"      %% "slick"                                % "3.6.1",
+  "org.flywaydb"            %  "flyway-core"                          % "13.5.0",
+  "org.flywaydb"            %  "flyway-database-postgresql"           % "13.5.0",
+  "org.postgresql"          %  "postgresql"                           % "42.7.13" % Test,
+  "org.scalatest"           %% "scalatest"                            % "3.2.20"  % Test,
+  "org.scalikejdbc"         %% "scalikejdbc"                          % "4.3.5"   % Test,
+  "org.scalikejdbc"         %% "scalikejdbc-test"                     % "4.3.5"   % Test,
+  "com.dimafeng"            %% "testcontainers-scala-postgresql"      % "0.44.1"  % Test,
+  "com.dimafeng"            %% "testcontainers-scala-scalatest"       % "0.44.1"  % Test,
+  "org.scalacheck"          %% "scalacheck"                           % "1.19.0"  % Test,
+  "org.scalatestplus"       %% "scalacheck-1-19"                      % "3.2.20.0" % Test,
+  "ch.qos.logback"          %  "logback-classic"                      % "1.5.18"  % Test
 )
